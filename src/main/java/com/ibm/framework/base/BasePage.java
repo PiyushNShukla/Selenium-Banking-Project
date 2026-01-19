@@ -49,4 +49,6 @@ public class BasePage {
 		WebElement element = waitForVisible(locator);
 		((JavascriptExecutor)DriverFactory.getDriver()).executeScript("arguments[0].click();",element);
 	}
+	
+
 }

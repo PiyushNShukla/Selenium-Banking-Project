@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-19T14:40:03 IST" name="Default suite" finished-at="2026-01-19T14:40:09 IST" duration-ms="5573">
+  <suite started-at="2026-01-19T16:55:51 IST" name="Default suite" finished-at="2026-01-19T16:56:07 IST" duration-ms="16539">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ibm.banking.runners.TestRunner@3d285d7e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-01-19T14:40:03 IST" name="Default test" finished-at="2026-01-19T14:40:09 IST" duration-ms="5573">
-      <class name="Testing.TestDriver">
-        <test-method signature="openSite()[pri:0, instance:Testing.TestDriver@4218d6a3]" started-at="2026-01-19T14:40:03 IST" name="openSite" finished-at="2026-01-19T14:40:09 IST" duration-ms="5483" status="PASS">
+    <test started-at="2026-01-19T16:55:51 IST" name="Default test" finished-at="2026-01-19T16:56:07 IST" duration-ms="16539">
+      <class name="com.ibm.banking.runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ibm.banking.runners.TestRunner@3d285d7e]" started-at="2026-01-19T16:55:51 IST" name="setUpClass" finished-at="2026-01-19T16:55:51 IST" duration-ms="342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@778d82e9]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openSite -->
-      </class> <!-- Testing.TestDriver -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ibm.banking.runners.TestRunner@3d285d7e]" started-at="2026-01-19T16:55:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-19T16:55:59 IST" duration-ms="7564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality for TDDBank"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ibm.banking.runners.TestRunner@3d285d7e]" started-at="2026-01-19T16:55:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-19T16:56:07 IST" duration-ms="8533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality for TDDBank"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ibm.banking.runners.TestRunner@3d285d7e]" started-at="2026-01-19T16:56:07 IST" name="tearDownClass" finished-at="2026-01-19T16:56:07 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ibm.banking.runners.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,24 @@
 package com.ibm.banking.pages;
 
-public class LoginPage {
+import org.openqa.selenium.By;
 
+import com.ibm.framework.base.BasePage;
+import com.ibm.framework.config.ConfigReader;
+import com.ibm.framework.driver.DriverFactory;
+
+public class LoginPage extends BasePage{
+		
+	private By username = By.id("email");
+	private By password = By.id("password");
+	private By login = By.cssSelector("button[type='submit']");
+	
+	public void open() {
+		DriverFactory.getDriver().get(ConfigReader.get("baseUrl"));
+	}
+	
+	public void login(String user,String pass) {
+		type(username,user);
+		type(password,pass);
+		click(login);
+	}
 }
